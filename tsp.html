@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+  <head>
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>2 Column Layout &mdash; Left Menu</title>
+    <style type="text/css">
+
+      body{
+        margin:0;
+        padding:0;
+        font-family: Sans-Serif;
+        line-height: 1.5em;
+      }
+
+      main {
+        padding-bottom: 10010px;
+        margin-bottom: -10000px;
+        float: left;
+        width: 100%;
+      }
+
+      #nav {
+        float: left;
+        width: 230px;
+        margin-left: -100%;
+        padding-bottom: 10010px;
+        margin-bottom: -10000px;
+        background: #eee;
+      }
+
+      #wrapper {
+        overflow: hidden;
+      }
+
+      #content {
+        margin-left: 230px; /* Same as 'nav' width */
+      }
+
+      .innertube{
+        margin: 15px; /* Padding for content */
+        margin-top: 0;
+      }
+
+      p {
+        color: #555;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul a {
+        color: darkgreen;
+        text-decoration: none;
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+    <script src="sigma.js/build/sigma.min.js"></script>
+    <script src="sigma.js/build/plugins/sigma.parsers.json.min.js"></script>
+    <script>
+      sigma.parsers.json('nodes.json', {
+        container: 'wrapper',
+        settings: {
+          defaultNodeColor: '#ec5148'
+        }
+      });
+    </script>
+
+    <main>
+      <div id="content">
+        <div class="innertube">
+          <h1>Heading</h1>
+          <!-- <p><script>generateText(30)</script></p> -->
+        </div>
+      </div>
+    </main>
+
+    <nav id="nav">
+      <div class="innertube">
+        <h1> Acciones </h1>
+        <ul>
+          <li><button type="button">Empezar</button></li>
+          <li><button type="button">Arriba</button></li>
+          <li><button type="button">Abajo</button></li>
+          <li><button type="button">Izquierda</button></li>
+          <li><button type="button">Derecha</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    </div>
+  </body>
+</html>
+
